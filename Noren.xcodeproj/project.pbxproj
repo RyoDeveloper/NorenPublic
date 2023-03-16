@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A02CB2729B430A9009AC0A9 /* DayCalendarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A02CB2629B430A9009AC0A9 /* DayCalendarListViewModel.swift */; };
+		2A136A95299C807E00D50DE3 /* NorenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A136A94299C807E00D50DE3 /* NorenApp.swift */; };
+		2A136A97299C807E00D50DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A136A96299C807E00D50DE3 /* ContentView.swift */; };
+		2A136A99299C807F00D50DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A136A98299C807F00D50DE3 /* Assets.xcassets */; };
+		2A136A9C299C807F00D50DE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A136A9B299C807F00D50DE3 /* Preview Assets.xcassets */; };
+		2A136AA6299C839800D50DE3 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A136AA5299C839800D50DE3 /* NavigationView.swift */; };
+		2A136AA8299C83C200D50DE3 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A136AA7299C83C200D50DE3 /* SidebarView.swift */; };
+		2A136AAA299C83E100D50DE3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A136AA9299C83E100D50DE3 /* DetailView.swift */; };
+		2A294A6529A1B3D600F75BCE /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A294A6429A1B3D600F75BCE /* MarkdownView.swift */; };
+		2A294A6729A1B5A400F75BCE /* DayCalendarTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A294A6629A1B5A400F75BCE /* DayCalendarTabView.swift */; };
+		2A294A6B29A1BFF700F75BCE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A294A6A29A1BFF700F75BCE /* SettingsView.swift */; };
+		2A294A6D29A1C01B00F75BCE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A294A6C29A1C01B00F75BCE /* SettingsViewModel.swift */; };
+		2A294A7029A1C65800F75BCE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A294A7229A1C65800F75BCE /* Localizable.strings */; };
+		2A294A7629A1C67300F75BCE /* RDMarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A294A7529A1C67300F75BCE /* RDMarkdownKit */; };
+		2A59B0C7299CDBE4002EEA62 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59B0C6299CDBE4002EEA62 /* PlanView.swift */; };
+		2AC754A9299F444E0017E254 /* CreatePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC754A8299F444E0017E254 /* CreatePlanView.swift */; };
+		2AC754AB299F44770017E254 /* CreatePlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC754AA299F44770017E254 /* CreatePlanViewModel.swift */; };
+		2AC754AD299F45550017E254 /* GetPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC754AC299F45550017E254 /* GetPriority.swift */; };
+		2AC754AF299F48A90017E254 /* GetEntityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC754AE299F48A90017E254 /* GetEntityName.swift */; };
+		2AD4FD9929A09FA200232E71 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD4FD9829A09FA200232E71 /* DateFormatter.swift */; };
+		2AED9F60299C8E8E00DAA0AF /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F5F299C8E8E00DAA0AF /* CalendarView.swift */; };
+		2AED9F62299C913000DAA0AF /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F61299C913000DAA0AF /* DayCalendarView.swift */; };
+		2AED9F64299C923700DAA0AF /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F63299C923700DAA0AF /* WeekCalendarView.swift */; };
+		2AED9F69299C986300DAA0AF /* DayCalendarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F68299C986300DAA0AF /* DayCalendarListView.swift */; };
+		2AED9F6D299C9A6900DAA0AF /* PlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F6C299C9A6900DAA0AF /* PlanManager.swift */; };
+		2AED9F6F299C9AB400DAA0AF /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F6E299C9AB400DAA0AF /* Plan.swift */; };
+		2AED9F72299CB81A00DAA0AF /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F71299CB81A00DAA0AF /* ReminderView.swift */; };
+		2AED9F74299CBC2000DAA0AF /* BoardReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F73299CBC2000DAA0AF /* BoardReminderView.swift */; };
+		2AED9F77299CBC5900DAA0AF /* GridReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F76299CBC5900DAA0AF /* GridReminderView.swift */; };
+		2AED9F79299CBCFD00DAA0AF /* CalendarReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED9F78299CBCFD00DAA0AF /* CalendarReminderListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A02CB2629B430A9009AC0A9 /* DayCalendarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarListViewModel.swift; sourceTree = "<group>"; };
+		2A136A91299C807E00D50DE3 /* Noren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noren.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A136A94299C807E00D50DE3 /* NorenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorenApp.swift; sourceTree = "<group>"; };
+		2A136A96299C807E00D50DE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A136A98299C807F00D50DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A136A9B299C807F00D50DE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A136AA5299C839800D50DE3 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		2A136AA7299C83C200D50DE3 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		2A136AA9299C83E100D50DE3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2A294A6429A1B3D600F75BCE /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
+		2A294A6629A1B5A400F75BCE /* DayCalendarTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarTabView.swift; sourceTree = "<group>"; };
+		2A294A6A29A1BFF700F75BCE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2A294A6C29A1C01B00F75BCE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		2A294A7129A1C65800F75BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2A294A7329A1C65D00F75BCE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2A59B0C6299CDBE4002EEA62 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		2AC754A8299F444E0017E254 /* CreatePlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlanView.swift; sourceTree = "<group>"; };
+		2AC754AA299F44770017E254 /* CreatePlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlanViewModel.swift; sourceTree = "<group>"; };
+		2AC754AC299F45550017E254 /* GetPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPriority.swift; sourceTree = "<group>"; };
+		2AC754AE299F48A90017E254 /* GetEntityName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEntityName.swift; sourceTree = "<group>"; };
+		2AD4FD9829A09FA200232E71 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		2AED9F5F299C8E8E00DAA0AF /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		2AED9F61299C913000DAA0AF /* DayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarView.swift; sourceTree = "<group>"; };
+		2AED9F63299C923700DAA0AF /* WeekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarView.swift; sourceTree = "<group>"; };
+		2AED9F68299C986300DAA0AF /* DayCalendarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarListView.swift; sourceTree = "<group>"; };
+		2AED9F6C299C9A6900DAA0AF /* PlanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanManager.swift; sourceTree = "<group>"; };
+		2AED9F6E299C9AB400DAA0AF /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		2AED9F71299CB81A00DAA0AF /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		2AED9F73299CBC2000DAA0AF /* BoardReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardReminderView.swift; sourceTree = "<group>"; };
+		2AED9F76299CBC5900DAA0AF /* GridReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridReminderView.swift; sourceTree = "<group>"; };
+		2AED9F78299CBCFD00DAA0AF /* CalendarReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReminderListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A136A8E299C807E00D50DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A294A7629A1C67300F75BCE /* RDMarkdownKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A136A88299C807E00D50DE3 = {
+			isa = PBXGroup;
+			children = (
+				2A136A93299C807E00D50DE3 /* Noren */,
+				2A136A92299C807E00D50DE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A136A92299C807E00D50DE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A136A91299C807E00D50DE3 /* Noren.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A136A93299C807E00D50DE3 /* Noren */ = {
+			isa = PBXGroup;
+			children = (
+				2A136A94299C807E00D50DE3 /* NorenApp.swift */,
+				2A136A96299C807E00D50DE3 /* ContentView.swift */,
+				2A294A7229A1C65800F75BCE /* Localizable.strings */,
+				2A294A6929A1BFDE00F75BCE /* Settings */,
+				2A294A6329A1B3B800F75BCE /* Markdown */,
+				2A59B0C5299CDBCB002EEA62 /* Plan */,
+				2AED9F70299CB5E000DAA0AF /* Reminder */,
+				2AED9F6A299C9A0B00DAA0AF /* Model */,
+				2AED9F5E299C8E1900DAA0AF /* Calendar */,
+				2A136AA4299C836400D50DE3 /* Navigation */,
+				2A136A98299C807F00D50DE3 /* Assets.xcassets */,
+				2A136A9A299C807F00D50DE3 /* Preview Content */,
+			);
+			path = Noren;
+			sourceTree = "<group>";
+		};
+		2A136A9A299C807F00D50DE3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A136A9B299C807F00D50DE3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A136AA4299C836400D50DE3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2A136AA5299C839800D50DE3 /* NavigationView.swift */,
+				2A136AA7299C83C200D50DE3 /* SidebarView.swift */,
+				2A136AA9299C83E100D50DE3 /* DetailView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2A294A6329A1B3B800F75BCE /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				2A294A6429A1B3D600F75BCE /* MarkdownView.swift */,
+			);
+			path = Markdown;
+			sourceTree = "<group>";
+		};
+		2A294A6929A1BFDE00F75BCE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2A294A6A29A1BFF700F75BCE /* SettingsView.swift */,
+				2A294A6C29A1C01B00F75BCE /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2A59B0C5299CDBCB002EEA62 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				2A59B0C6299CDBE4002EEA62 /* PlanView.swift */,
+				2AC754A8299F444E0017E254 /* CreatePlanView.swift */,
+				2AC754AA299F44770017E254 /* CreatePlanViewModel.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		2AED9F5E299C8E1900DAA0AF /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				2AED9F5F299C8E8E00DAA0AF /* CalendarView.swift */,
+				2AED9F61299C913000DAA0AF /* DayCalendarView.swift */,
+				2AED9F63299C923700DAA0AF /* WeekCalendarView.swift */,
+				2AED9F68299C986300DAA0AF /* DayCalendarListView.swift */,
+				2A02CB2629B430A9009AC0A9 /* DayCalendarListViewModel.swift */,
+				2A294A6629A1B5A400F75BCE /* DayCalendarTabView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		2AED9F6A299C9A0B00DAA0AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AED9F6C299C9A6900DAA0AF /* PlanManager.swift */,
+				2AED9F6E299C9AB400DAA0AF /* Plan.swift */,
+				2AC754AC299F45550017E254 /* GetPriority.swift */,
+				2AC754AE299F48A90017E254 /* GetEntityName.swift */,
+				2AD4FD9829A09FA200232E71 /* DateFormatter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AED9F70299CB5E000DAA0AF /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				2AED9F71299CB81A00DAA0AF /* ReminderView.swift */,
+				2AED9F73299CBC2000DAA0AF /* BoardReminderView.swift */,
+				2AED9F76299CBC5900DAA0AF /* GridReminderView.swift */,
+				2AED9F78299CBCFD00DAA0AF /* CalendarReminderListView.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A136A90299C807E00D50DE3 /* Noren */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A136A9F299C807F00D50DE3 /* Build configuration list for PBXNativeTarget "Noren" */;
+			buildPhases = (
+				2A136A8D299C807E00D50DE3 /* Sources */,
+				2A136A8E299C807E00D50DE3 /* Frameworks */,
+				2A136A8F299C807E00D50DE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Noren;
+			packageProductDependencies = (
+				2A294A7529A1C67300F75BCE /* RDMarkdownKit */,
+			);
+			productName = Noren;
+			productReference = 2A136A91299C807E00D50DE3 /* Noren.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A136A89299C807E00D50DE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2A136A90299C807E00D50DE3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 2A136A8C299C807E00D50DE3 /* Build configuration list for PBXProject "Noren" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 2A136A88299C807E00D50DE3;
+			packageReferences = (
+				2A294A7429A1C67300F75BCE /* XCRemoteSwiftPackageReference "RDMarkdownKitBeta" */,
+			);
+			productRefGroup = 2A136A92299C807E00D50DE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A136A90299C807E00D50DE3 /* Noren */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A136A8F299C807E00D50DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A136A9C299C807F00D50DE3 /* Preview Assets.xcassets in Resources */,
+				2A294A7029A1C65800F75BCE /* Localizable.strings in Resources */,
+				2A136A99299C807F00D50DE3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A136A8D299C807E00D50DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC754AF299F48A90017E254 /* GetEntityName.swift in Sources */,
+				2A294A6729A1B5A400F75BCE /* DayCalendarTabView.swift in Sources */,
+				2A136A97299C807E00D50DE3 /* ContentView.swift in Sources */,
+				2AC754AB299F44770017E254 /* CreatePlanViewModel.swift in Sources */,
+				2AD4FD9929A09FA200232E71 /* DateFormatter.swift in Sources */,
+				2AED9F74299CBC2000DAA0AF /* BoardReminderView.swift in Sources */,
+				2AED9F77299CBC5900DAA0AF /* GridReminderView.swift in Sources */,
+				2A136AA8299C83C200D50DE3 /* SidebarView.swift in Sources */,
+				2AED9F72299CB81A00DAA0AF /* ReminderView.swift in Sources */,
+				2A294A6B29A1BFF700F75BCE /* SettingsView.swift in Sources */,
+				2A294A6D29A1C01B00F75BCE /* SettingsViewModel.swift in Sources */,
+				2AED9F64299C923700DAA0AF /* WeekCalendarView.swift in Sources */,
+				2A294A6529A1B3D600F75BCE /* MarkdownView.swift in Sources */,
+				2AED9F60299C8E8E00DAA0AF /* CalendarView.swift in Sources */,
+				2AC754AD299F45550017E254 /* GetPriority.swift in Sources */,
+				2AED9F6F299C9AB400DAA0AF /* Plan.swift in Sources */,
+				2AED9F79299CBCFD00DAA0AF /* CalendarReminderListView.swift in Sources */,
+				2A136AA6299C839800D50DE3 /* NavigationView.swift in Sources */,
+				2AED9F62299C913000DAA0AF /* DayCalendarView.swift in Sources */,
+				2AED9F6D299C9A6900DAA0AF /* PlanManager.swift in Sources */,
+				2A136AAA299C83E100D50DE3 /* DetailView.swift in Sources */,
+				2A02CB2729B430A9009AC0A9 /* DayCalendarListViewModel.swift in Sources */,
+				2AED9F69299C986300DAA0AF /* DayCalendarListView.swift in Sources */,
+				2A136A95299C807E00D50DE3 /* NorenApp.swift in Sources */,
+				2AC754A9299F444E0017E254 /* CreatePlanView.swift in Sources */,
+				2A59B0C7299CDBE4002EEA62 /* PlanView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A294A7229A1C65800F75BCE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A294A7129A1C65800F75BCE /* en */,
+				2A294A7329A1C65D00F75BCE /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A136A9D299C807F00D50DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A136A9E299C807F00D50DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A136AA0299C807F00D50DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Noren/Preview Content\"";
+				DEVELOPMENT_TEAM = BGS5U89ZQT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "イベントの表示、更新に使用されます。";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "リマインダーの表示、更新に使用されます。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ryodeveloper.Noren;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A136AA1299C807F00D50DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Noren/Preview Content\"";
+				DEVELOPMENT_TEAM = BGS5U89ZQT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "イベントの表示、更新に使用されます。";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "リマインダーの表示、更新に使用されます。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ryodeveloper.Noren;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A136A8C299C807E00D50DE3 /* Build configuration list for PBXProject "Noren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A136A9D299C807F00D50DE3 /* Debug */,
+				2A136A9E299C807F00D50DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A136A9F299C807F00D50DE3 /* Build configuration list for PBXNativeTarget "Noren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A136AA0299C807F00D50DE3 /* Debug */,
+				2A136AA1299C807F00D50DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A294A7429A1C67300F75BCE /* XCRemoteSwiftPackageReference "RDMarkdownKitBeta" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RyoDeveloper/RDMarkdownKitBeta";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A294A7529A1C67300F75BCE /* RDMarkdownKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A294A7429A1C67300F75BCE /* XCRemoteSwiftPackageReference "RDMarkdownKitBeta" */;
+			productName = RDMarkdownKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2A136A89299C807E00D50DE3 /* Project object */;
+}
